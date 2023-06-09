@@ -18,3 +18,35 @@ This gets us the new weights
 
 #### The notebook for running MNIST is attached
 
+##Training
+### Input image size is 28*28
+### CNN Layers Used
+
+### Layer1 - Conv with 8 channels, kernel 3*3, Padding=0, Stride=0
+### BN used
+### DropOut Used (p=0.1)
+### Layer2 - Conv with 16 channels, kernel 3*3, Padding=0, Stride=0
+### BN Used
+### DropOut Used (p=0.1)
+
+### Transitional Layer - 
+### 1. MaxPooling (2*2)
+### 2. 1*1 Conv - * channels
+### BN used
+### Layer3 - Conv with 8 channels, kernel 3*3, Padding=0, Stride=0
+###BN Used
+### Layer4 - Conv with 16 channels, kernel 3*3, Padding=0, Stride=0
+###BN
+### Transitional Layer: Max Pooling
+
+### Layer 5 - Conv with 32 channels, kernel 3*3, Padding=0, Stride=0
+
+### FC Layer 1 - Dim(2*2*32,30)
+### FC Layer 2 -Dim (30,10)
+### Output - Log Softmax
+
+### Other hyperparams
+### LR=0.01
+
+
+
